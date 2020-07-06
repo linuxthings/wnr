@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 module.exports = {
   siteMetadata: {
     title: `Novela by Narative`,
@@ -33,6 +32,7 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     {
       resolve: 'gatsby-source-contentful',
@@ -44,12 +44,12 @@ module.exports = {
     {
       resolve: "@narative/gatsby-theme-novela",
       options: {
-        contentPosts: "content/posts",
-        contentAuthors: "content/authors",
-        basePath: "/",
-        authorsPage: true,
+        //contentPosts: "content/posts",
+        //contentAuthors: "content/authors",
+        //basePath: "/",
+        //authorsPage: true,
         sources: {
-          local: false,
+          //local: false,
           contentful: true,
         },
       },
